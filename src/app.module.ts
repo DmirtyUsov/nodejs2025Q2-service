@@ -3,9 +3,11 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { InMemoryDbModule } from './in-memory-db/in-memory-db.module';
+import { TracksModule } from './tracks/tracks.module';
+import { ArtistsModule } from './artists/artists.module';
 
 @Module({
-  imports: [UsersModule, InMemoryDbModule],
+  imports: [UsersModule, InMemoryDbModule, TracksModule, ArtistsModule],
   controllers: [AppController],
   providers: [AppService],
 })
