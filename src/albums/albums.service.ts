@@ -62,7 +62,7 @@ export class AlbumsService {
     if (!artist) {
       throw new NotFoundException();
     }
-    //this.inMemoryDBService.cleanAlbum(id);
+    this.inMemoryDBService.cleanAlbum(id);
     return artist;
   }
 }

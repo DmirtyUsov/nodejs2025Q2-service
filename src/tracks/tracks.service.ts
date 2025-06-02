@@ -64,7 +64,7 @@ export class TracksService {
     if (!track) {
       throw new NotFoundException();
     }
-    //this.inMemoryDBService.cleanTrack(id);
+    this.inMemoryDBService.cleanTrack(id);
     return track;
   }
 }
