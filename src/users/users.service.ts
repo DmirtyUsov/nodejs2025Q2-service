@@ -5,9 +5,9 @@ import {
 } from '@nestjs/common';
 import { InMemoryDbService } from 'src/in-memory-db/in-memory-db.service';
 import { User } from './user';
-import { CreateUserDto } from './create-user-dto.model';
+import { CreateUserDto } from './create-user.dto';
 import { createHash, randomUUID } from 'node:crypto';
-import { UpdatePasswordDto } from './update-password-dto.model';
+import { UpdatePasswordDto } from './update-password.dto';
 
 const ALGORITHM = 'sha256';
 const ENCODING = 'hex';
